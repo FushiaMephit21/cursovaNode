@@ -51,7 +51,7 @@ const collTab = {
 
 mongoose.connect("mongodb://heroku_216dzwn6:740t2la6claquv4s9h0t4c18qe@ds341247.mlab.com:41247/heroku_216dzwn6", { useNewUrlParser: true }, function(err){
     if(err) return console.log(err);
-    app.listen(41247, function(){
+    app.listen(process.env.PORT, function(){
         console.log("Підключення...");
     });
 });
