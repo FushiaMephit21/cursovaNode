@@ -79,6 +79,9 @@ app.get("/:table", function(req, res) {
     ;});
 });
 
+app.get("/favicon.ico", function(req, res) {
+	console.log("Спроба викликати favicon.ico (хз)");
+});
 
 app.post("/:table", function(req,res){
     const table = req.params["table"];
