@@ -2,8 +2,12 @@
   "name": "mongoapp",
   "version": "1.0.0",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "heroku"
+  ],
   "dependencies": {
     "body-parser": "^1.18.0",
     "express": "^4.16.0",
@@ -14,7 +18,7 @@
   },
   "main": "app.js",
   "devDependencies": {},
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "author": "max",
+  "license": "MIT",
+  "description": "my cursova"
 }
