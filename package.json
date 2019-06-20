@@ -1,0 +1,12 @@
+{
+  "name": "mongoapp",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "^1.18.0",
+    "express": "^4.16.0",
+    "hbs": "^4.0.4",
+    "mongodb": "^3.1.0",
+    "mongoose": "^5.6.0",
+    "pug": "^2.0.4"
+  }
+}

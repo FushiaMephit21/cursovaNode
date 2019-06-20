@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+<body>
+	
+	<h1 id="headT">{{title}}</h1>
+	<div id="tableBlock">{{adaptiveForm tt title}}</div>
+
+<script>
+	var placeHref = document.getElementById('headT').innerText;
+
+	// function seeForm() {
+
+	// }
+
+
+	// $("body").on('DOMSubtreeModified', "tableBlock", function() {
+	// 	alert('changed');
+	// });
+
+	// Отримання усіх документів
+	// function getAllDocs() {
+	// 	$.ajax({
+	// 		url: `/${placeHref}`,
+	// 		type: `GET`,
+	// 		contentType: `application/json`,
+	// 		success: function(tables) {
+	// 			var rows = "";
+	// 			$.each(tables, function (index, table){
+	// 				rows+=row(table);
+	// 			})
+	// 			$("table tbody").append(rows);
+	// 		}
+	// 	});
+	// }
+
+	// // Отримання одного документа
+	// function getOneDoc(id) {
+	// 	$.ajax({
+	// 		url: `/${placeHref}/${id}`,
+	// 		type: "GET",
+	// 		contentType: "application/json",
+	// 		success: function(table) {
+	// 			var form = document.forms["tableForm"];
+				
+	// 		}
+	// 	});
+	// }
+
+	// // Додавання документа
+	// function CreateDoc(arr) {
+	// 	$.ajax({
+	// 		url: `/${placeHref}`,
+	// 		contentType: "application/json",
+	// 		method: "POST",
+	// 		data: JSON.stringify({
+	// 			dataArr: arr
+	// 		}),
+	// 		success: function(table) {
+	// 			reset();
+	// 			$("table tbody").append(row(table));
+	// 		}
+	// 	});
+	// };
+
+	// // Оновлення документа
+	// function editDoc(arr) {
+	// 	$.ajax({
+	// 		url: `/${placeHref}`,
+	// 		contentType: "application/json",
+	// 		method: "PUT",
+	// 		data: JSON.stringify({
+	// 			dataArr: arr
+	// 		}),
+	// 		success: function(table) {
+	// 			reset();
+	// 			console.log(table);
+	// 			$(`tr[data-rowid='${table._id}']`).replaceWith(row(table));
+	// 		}
+	// 	});
+	// }
+
+	// // Скидування форми
+	// function reset() {
+	// 	var form = document.forms["tableForm"];
+	// 	form.reset();
+	// 	form.elements["_id"].value = 0;
+	// }
+
+	// //Видалення документа
+	// function deleteDoc(id) {
+	// 	$.ajax({
+	// 		url: `/${placeHref}/${id}`,
+	// 		contentType: "application/json",
+	// 		method: "DELETE",
+	// 		success: function(table) {
+	// 			console.log(table);
+	// 			$(`tr[data-rowid='${table._id}'`).remove();
+	// 		}
+	// 	});
+	// }
+
+	// //Створення строки для таблиці
+	// var row = function(table) {
+	// 	let out = '';
+	// 	for (var key in table) {
+	// 		out+=`<td data-id='${table[key]}'>${table[key]}</td>`;
+	// 	}
+	// 	return "<tr data-rowid='" + table._id + "'>"+out+"<button class='updBtn' data-id='" + table._id + "'>Update</button> | " +
+ //                    "<button class='delBtn' data-id='" + table._id + "'>Delete</button></td></tr>";
+	// }
+
+	// //Скидування значень форми
+	// $("#reset").click(function(e){
+	// 	e.preventDefault();
+	// 	reset();
+	// });
+
+	// // нажимаем на ссылку Изменить
+ //        $("body").on("click", ".updBtn", function () {
+ //            var id = $(this).data("id");
+ //            getOneDoc(id);
+ //        })
+ //        // нажимаем на ссылку Удалить
+ //        $("body").on("click", ".delBtn", function () {
+ //            var id = $(this).data("id");
+ //            deleteDoc(id);
+ //        })
+
+
+ //     getAllDocs();
+</script>
+</body>
+</html>
