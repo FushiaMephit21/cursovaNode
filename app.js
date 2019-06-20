@@ -49,9 +49,9 @@ const collTab = {
     "rentgenologs": mongoose.model("rentgenologs", coll["rentgenologsModel"].scheme())
 }
 
-mongoose.connect("mongodb://localhost:27017/cursova", { useNewUrlParser: true }, function(err){
+mongoose.connect("mongodb://heroku_216dzwn6:740t2la6claquv4s9h0t4c18qe@ds341247.mlab.com:41247/heroku_216dzwn6", { useNewUrlParser: true }, function(err){
     if(err) return console.log(err);
-    app.listen(3000, function(){
+    app.listen(41247, function(){
         console.log("Підключення...");
     });
 });
