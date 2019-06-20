@@ -83,6 +83,7 @@ app.get("/favicon.ico", function(req, res) {
 	console.log("Спроба викликати favicon.ico (хз)");
 });
 
+
 app.post("/:table", function(req,res){
     const table = req.params["table"];
     if (!req.body) return res.sendStatus(400);
